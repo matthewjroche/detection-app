@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function UploadComponent({ onFileUpload }) {
+function UploadImage({ onFileUpload }) {
   const [file, setFile] = useState(null);
 
   const handleSubmit = (event) => {
@@ -24,4 +24,4 @@ function UploadComponent({ onFileUpload }) {
   );
 }
 
-export default UploadComponent;
+export default UploadImage;

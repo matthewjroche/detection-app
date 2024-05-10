@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import UploadComponent from "../components/UploadComponent";
+import UploadImage from "../components/UploadImage";
 import processImage from "../utils/processImage";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
       <div className="text-xl font-semibold mb-4">
         Upload an Image for AI Analysis
       </div>
-      <UploadComponent onFileUpload={handleFileUpload} />
+      <UploadImage onFileUpload={handleFileUpload} />
       {imageUrl && (
         <div className="my-4">
           <img
